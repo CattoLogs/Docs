@@ -8281,7 +8281,8 @@ a.text-dark:hover, a.text-dark:focus {
       -ms-flex-negative: 1;
       flex-shrink: 1;
       overflow: hidden;
-      color: white;
+      color: black;
+      font-weight: 900;
     }
 
     .sidebar-wrapper .sidebar-menu ul li:hover {
