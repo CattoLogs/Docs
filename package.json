@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/CattoLogs/Docs/issues"
   },
-  "homepage": "https://github.com/CattoLogs/Docs#readme"
+  "homepage": "https://github.com/CattoLogs/Docs#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.2"
+  }
 }

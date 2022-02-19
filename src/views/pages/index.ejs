@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="CattoLogsDocs ">
+  <title>CattoLogsDocs 
+  </title>
+  <!-- using online links -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link rel="stylesheet" href="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css">
+
+  <!-- code block stuff-->
+
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css">
+
+  <!-- using local links -->
+  <!-- <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="../node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css"> -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+</head>
+
+<body>
+  <div class="page-wrapper toggled light-theme">
+    <nav id="sidebar" class="sidebar-wrapper">
+      <div class="sidebar-content">
+        <!-- sidebar-brand  -->
+        <div class="sidebar-item sidebar-brand text-white font-weight-bold">
+          CattoLogs Docummentation
+        </div>
+        <!-- sidebar-header  -->
+        <!-- sidebar-menu  -->
+        <div class=" sidebar-item sidebar-menu">
+          <ul>
+            <li class="header-menu"> <span>CattoLogs Introduction</span> </li>
+            <li class="sidebar-dropdown">
+              <a href="#"> <i class="fa fa-shopping-cart"></i> <span class="menu-text">Getting Started</span> <span class="badge badge-pill badge-primary">3</span> </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li> <a href="#">Setup CattoLogs Yourself
+
+                    </a> </li>
+                  <li> <a href="#">Add your own data </a> </li>
+                  <li> <a href="#">Customize to your liking :D</a> </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#"> <i class="fa fa-book"></i> <span class="menu-text">Basic Usage</span> </a>
+            </li>
+            <li>
+              <a href="#"> <i class="fa fa-calendar"></i> <span class="menu-text">Customizing</span> </a>
+            </li>
+            <li>
+              <a href="#"> <i class="fa fa-folder"></i> <span class="menu-text">Known Issues</span> </a>
+            </li>
+          </ul>
+        </div>
+        <!-- sidebar-menu  -->
+      </div>
+      <!-- sidebar-footer  -->
+
+    </nav>
+    <!-- page-content  -->
+    <main class="page-content">
+      <div id="overlay" class="overlay"></div>
+      <div class="container-fluid">
+        <div class="row d-flex align-items-center p-3 border-bottom">
+          <div class="col-md-1">
+            <a id="toggle-sidebar" class="btn rounded-0 p-3" href="#"> <i class="fas fa-bars"></i> </a>
+          </div>
+          <div class="col-md-8">
+            <nav aria-label="breadcrumb" class="align-items-center">
+              <a href="/docs" class="breadcrumb-back" title="Back"></a>
+              <ol class="breadcrumb d-none d-lg-inline-flex m-0">
+                <li class="breadcrumb-item"><a href="/docs">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Introduction</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+        <div class="row p-lg-4">
+          <article class="main-content col-md-9 pr-lg-5">
+            <!-- title -Add bootstrap helpers for spacing -->
+            <h1 class="mb-2 mt-3">Introduction</h1>
+            <!--//title -->
+            <p class="lead mb-3"> How to start using CattoLogsDocs </p>
+            <p>deez</p>
+            <p>deez</p>
+
+            <!-- Sep -->
+            <hr class="my-5">
+            <!-- alert -->
+            <div class="alert alert-primary d-flex justify-content-start align-items-center" role="alert"> <span class="fa fa-info mr-4"></span>
+              <p>deez</p>
+            </div>
+            <!-- heading -->
+            <h3 class="font-weight-bold mb-2">
+              Dev setup
+            </h3>
+            <p> To get started, you need to do the following: </p>
+            <ol>
+              <li><strong>deez</strong> deez </li>
+              <li><strong class="badge badge-danger-soft"><code>npm install CattoLogs</code></strong>: If you haven't installed , you have it L</li>
+            </ol>
+            <!-- Sep -->
+            <hr class="my-5">
+            <h3 class="font-weight-bold mb-2">
+              Example Using CattoLogsDocs
+            </h3>
+
+
+            <figure class="highlight">
+              <pre><code class="language-javascript" data-lang="javascript">
+                <span class="c">&lt;!-- As a link --&gt;</span>
+        const { CattoLogsDocs } = require('CattoLogs')
+        // client is your Discord Bot client
+      client.CattoLogsDocs = new CattoLogsDocs({
+  // Server Port it's gonna listen to {Number}
+  port: 420,
+  // if you use a domain {String}
+  baseURL: 'https://scrx.xyz',
+  // the title you'll see in your browser tab {String}
+  name: 'CattoLogs Docs',
+  // server url eather your bots support or anything else 🤷‍♂️ {String}
+  serverURL: String,
+  // to use custom routes like https://scrx.xyz/custom-route/ and shows your own page {Boolean}
+  customRoutes: true,
+  // custom file folder name if any: default is "CattoLogs-folder" {String}
+  customFolderName: String,
+  // custom file folder {String}
+  customFolder: 'path to the customFolderName folder'
+   })    
+              </code></pre>
+            </figure>
+          </article>
+          <aside class="col-md-3 d-none d-md-block border-left">
+            <div class="widget widget-support-forum p-md-3 p-sm-2"> <span class="icon icon-forum"></span>
+              <h4>Looking for help? Join Our Dev Server</h4>
+              <p>Couldn’t find what your are looking for or needing assistence?</p> <a href="https://CattoLogs.dev" class="btn btn-light">CattoLogs Dev</a>
+            </div>
+            <hr class="my-5">
+            <ul class="aside-nav nav flex-column">
+              <li class="nav-item"> <a data-scroll="" class="nav-link text-dark" href="#section-1">SectionUwU</a> </li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </main>
+    <!-- page-content" -->
+  </div>
+  <!-- page-wrapper -->
+  <!-- using online scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+  </script>
+  <script src="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/prism.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+  <!-- using local scripts -->
+  <!-- <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script> -->
+  <script src="js/main.js"></script>
+
+  <script>
+    // first, find all the div.code blocks
+    document.querySelectorAll('div.code').forEach(el => {
+      // then highlight each
+      hljs.highlightElement(el);
+    });
+  </script>
+</body>
+
+</html>
